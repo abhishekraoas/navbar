@@ -44,6 +44,19 @@
             padding: 3px 17px;
             width: 176px;
         }
+        .dropdown{
+            display: inline-block;
+            position: relative;
+        }
+        .dropbtn{
+            background-color: green;
+            color: white;
+            padding: 5px;
+        }
+        .droplist{
+            position: absolute;
+            display: none;
+        }
     </style>
 </head>
 
@@ -53,7 +66,18 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Courses</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <li><a href="#">Courses</a></li>
+                    </button>
+                    <div class="droplist">
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">Python</a></li>
+                    </div>
+                </div>
+
                 <li><a href="#">Contact Us</a></li>
                 <div class="search">
                     <input type="text" name="searchbox" id="searchbox" placeholder="Search This Website Content">

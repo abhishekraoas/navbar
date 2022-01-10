@@ -7,13 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <style>
+
+       .navbar ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
         .navbar {
             background-color: #50035b;
             border-radius: 3px;
         }
 
-        .navbar ul {
-            overflow: auto;
+        .navbar li:hover {
+            background-color: red;
+            padding: 13px;
         }
 
         .navbar li {
@@ -29,9 +37,10 @@
         }
 
         .navbar li a:hover {
-            color: red;
+            color: rgb(255, 255, 255);
         }
 
+        /* style the search box */
         .search {
             float: right;
             color: white;
@@ -44,19 +53,8 @@
             padding: 3px 17px;
             width: 176px;
         }
-        .dropdown{
-            display: inline-block;
-            position: relative;
-        }
-        .dropbtn{
-            background-color: green;
-            color: white;
-            padding: 5px;
-        }
-        .droplist{
-            position: absolute;
-            display: none;
-        }
+
+
     </style>
 </head>
 
@@ -66,6 +64,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
                 <div class="dropdown">
                     <button class="dropbtn">
                         <li><a href="#">Courses</a></li>
@@ -78,7 +77,7 @@
                     </div>
                 </div>
 
-                <li><a href="#">Contact Us</a></li>
+
                 <div class="search">
                     <input type="text" name="searchbox" id="searchbox" placeholder="Search This Website Content">
                 </div>

@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "abhishek" constent = "Author">
+    <title>Navbar</title>
+    <style>
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .navbar {
+            background-color: #50035b;
+            border-radius: 3px;
+        }
+
+        .navbar li:hover {
+            background-color: red;
+            padding: 13px;
+        }
+
+        .navbar li {
+            padding: 10px 20px;
+            float: left;
+            list-style: none;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        .dropdown {
+            width: 860px;
+            margin: 0 auto;
+        }
+
+        .dropdown ul {
+            list-style: none;
+            margin-top: 2%;
+        }
+
+        .dropdown ul li a {
+            background-color: #262626;
+            width: 170px;
+            border: 1px solid #fff;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            float: left;
+            color: #fff;
+
+        }
+
+        /* style the search box */
+        .search {
+            float: right;
+            color: white;
+            padding: 8px 45px;
+        }
+ 
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 176px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+
+                <li><a href="#">Courses</a></li>
+                <ul class="dropdown">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Python</a></li>
+                </ul>
+                <li><a href="#">Contact Us</a></li>
+
+                <div class="search">
+                    <input type="text" name="searchbox" id="searchbox" placeholder="Search This Website Content">
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

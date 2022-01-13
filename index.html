@@ -20,13 +20,13 @@
         .navbar {
             overflow: hidden;
             background-color: rgb(46, 4, 85);
-        
+
 
         }
 
         .navbar a {
             float: left;
-            font-size: 20px;
+            font-size: 18px;
             color: white;
             text-align: center;
             padding: 14px 16px;
@@ -47,7 +47,7 @@
         }
 
         .dropdown .dropbtn {
-            font-size: 20px;
+            font-size: 18px;
             border: none;
             outline: none;
             color: white;
@@ -82,6 +82,21 @@
         .dropdown:hover .droplist {
             display: block;
         }
+
+        /* style the search box */
+        .search {
+            float: right;
+            color: white;
+            padding: 8px 45px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 6px 17px;
+            width: 176px;
+        }
+        
     </style>
 </head>
 
@@ -102,7 +117,12 @@
             </div>
         </div>
         <a href="#">About Us</a>
+        <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" name="searchbox" id="searchbox" placeholder="Search This Website Content">
+        </div>
     </div>
+
 
 
 </body>
